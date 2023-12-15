@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rare Blossoms - Buy Exotic Plants</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js" defer></script>
+  <button id="darkModeButton">Toggle Dark Mode</button>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">Rare Blossoms</div>
+    <ul class="navbar">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="flowers.html">Flowers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Store</a></li>
+    </ul>
+  </div>
+
+  <div id="fullpage">
+    <div class="section">
+      <div class="main">
+        <h2>Buy Exotic Plants</h2>
+        <p>Explore our collection of rare and exotic plants. Fill out the form below to place an order.</p>
+        <form id="plantOrderForm" onsubmit="handleFormSubmission(event)">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="plantType">Select Plant Type:</label>
+          <select id="plantType" name="plantType" required>
+            <option value="orchid">Orchid</option>
+            <option value="canna">Canna</option>
+            <option value="hibiscus">Hibiscus</option>
+            <!-- Add more plant options as needed -->
+          </select>
+
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+
+          <label for="shippingAddress">Shipping Address:</label>
+          <textarea id="shippingAddress" name="shippingAddress" rows="4" required></textarea>
+
+          <button type="submit">Place Order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2023 by Rare Blossoms. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
